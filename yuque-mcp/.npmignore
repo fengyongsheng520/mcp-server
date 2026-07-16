@@ -1,0 +1,18 @@
+# ========================================
+# 此文件用于 npm publish，与 .gitignore 分开
+#
+# 规则：package.json 的 "files" 字段优先级最高
+#       这里列出 files 白名单之外的额外排除项
+# ========================================
+
+# 源码（只发布编译后的 build/）
+src/
+
+# 开发配置
+tsconfig.json
+.mcp.json
+pnpm-lock.yaml
+
+# 环境变量
+.env
+.env.*

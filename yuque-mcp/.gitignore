@@ -1,0 +1,28 @@
+# 依赖
+node_modules/
+
+# 编译输出
+build/
+
+# 日志
+*.log
+npm-debug.log*
+
+# 环境变量（防止泄露 token）
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# MCP 配置备份
+.mcp.json.*

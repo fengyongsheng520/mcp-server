@@ -1,0 +1,48 @@
+{
+  "name": "@wojiaoxiaofenfen/yuque-mcp",
+  "version": "0.1.5",
+  "description": "语雀 MCP Server — 通过 MCP 协议接入语雀知识库，支持笔记的增删改查操作",
+  "type": "module",
+  "bin": {
+    "yuque-server-mcp": "./build/stdio.js",
+    "yuque-server-mcp-http": "./build/streamable-http.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/stdio.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/stdio.js",
+    "streamable": "tsx src/streamable-http.ts",
+    "inspector:web": "npx @modelcontextprotocol/inspector"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheng/yuque-mcp"
+  },
+  "keywords": [
+    "mcp",
+    "yuque",
+    "语雀",
+    "model-context-protocol",
+    "mcp-server"
+  ],
+  "author": "sheng",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@wojiaoxiaofenfen/yuque-mcp": "^0.1.0",
+    "axios": "^1.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.3.3"
+  }
+}
