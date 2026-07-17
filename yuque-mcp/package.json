@@ -1,6 +1,6 @@
 {
   "name": "@wojiaoxiaofenfen/yuque-mcp",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "语雀 MCP Server — 通过 MCP 协议接入语雀知识库，支持笔记的增删改查操作",
   "type": "module",
   "bin": {
@@ -18,11 +18,12 @@
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/stdio.js",
     "streamable": "tsx src/streamable-http.ts",
-    "inspector:web": "npx @modelcontextprotocol/inspector"
+    "inspector:web": "npx @modelcontextprotocol/inspector",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheng/yuque-mcp"
+    "url": "https://github.com/fengyongsheng520/mcp-server"
   },
   "keywords": [
     "mcp",

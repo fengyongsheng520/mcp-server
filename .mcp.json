@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "xiaohongshu": {
+      "command": "node",
+      "args": [
+        "./xiaohongshu-mcp/build/stdio.js",
+        "--base-url",
+        "http://localhost:8000"
+      ],
+      "env": {
+        "XHS_API_BASE_URL": "http://localhost:8000",
+        "XHS_PHONE_NUMBER": "18826227460"
+      }
+    },
+    "yuque-mcp": {
+      "command": "node",
+      "args": [
+        "./yuque-mcp/build/stdio.js"
+      ],
+      "env": {
+        "YUQUE_TOKEN": "637VOlSHLnHfSoT6QOTHmWLU2k7nLWT2kZBml88Q"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@wojiaoxiaofenfen/xiaohongshu-mcp",
+  "version": "0.1.0",
+  "description": "小红书 MCP Server — 通过 MCP 协议接入小红书，支持搜索和读取笔记内容",
+  "type": "module",
+  "bin": {
+    "xiaohongshu-server-mcp": "./build/stdio.js",
+    "xiaohongshu-server-mcp-http": "./build/streamable-http.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/stdio.js', '755'); require('fs').chmodSync('build/streamable-http.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "start": "tsx src/streamable-http.ts",
+    "inspector": "npx @modelcontextprotocol/inspector build/stdio.js",
+    "inspector:web": "npx @modelcontextprotocol/inspector",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengyongsheng520/mcp-server"
+  },
+  "keywords": [
+    "mcp",
+    "xiaohongshu",
+    "小红书",
+    "model-context-protocol",
+    "mcp-server"
+  ],
+  "author": "sheng",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.3.3"
+  }
+}
