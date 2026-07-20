@@ -1,0 +1,45 @@
+{
+  "name": "@wojiaoxiaofenfen/juejin-mcp",
+  "version": "0.1.0",
+  "description": "掘金 MCP Server — 通过 MCP 协议接入掘金社区，支持文章、沸点、用户等操作的增删改查",
+  "type": "module",
+  "bin": {
+    "juejin-server-mcp": "./build/stdio.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/stdio.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/stdio.js",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengyongsheng520/mcp-server"
+  },
+  "keywords": [
+    "mcp",
+    "juejin",
+    "掘金",
+    "model-context-protocol",
+    "mcp-server"
+  ],
+  "author": "sheng",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.3.3"
+  }
+}

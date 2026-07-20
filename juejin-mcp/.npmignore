@@ -1,0 +1,11 @@
+# 源码（只发布编译后的 build/）
+src/
+
+# 开发配置
+tsconfig.json
+.mcp.json
+pnpm-lock.yaml
+
+# 环境变量
+.env
+.env.*

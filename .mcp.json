@@ -12,13 +12,11 @@
         "XHS_PHONE_NUMBER": "18826227460"
       }
     },
-    "yuque-mcp": {
-      "command": "node",
-      "args": [
-        "./yuque-mcp/build/stdio.js"
-      ],
+    "juejin": {
+      "command": "npx",
+      "args": ["@wojiaoxiaofenfen/juejin-mcp"],
       "env": {
-        "YUQUE_TOKEN": "637VOlSHLnHfSoT6QOTHmWLU2k7nLWT2kZBml88Q"
+        "JUEJIN_COOKIE": "csrf_session_id=eaf6e623be2b582ca3821a239ce4ae33; _tea_utm_cache_2608=undefined; __tea_cookie_tokens_2608=%257B%2522web_id%2522%253A%25227664430815308891684%2522%252C%2522user_unique_id%2522%253A%25227664430815308891684%2522%252C%2522timestamp%2522%253A1784514374034%257D; passport_csrf_token=8b0fe85210886c077a13630cdfef7f9e; passport_csrf_token_default=8b0fe85210886c077a13630cdfef7f9e; n_mh=YfiURXyYBchoJJSb2xobbGkUYJg4C3I4iTFWR-Y459U; sid_guard=9a44b59f40d77577cdf1748f9ecd5e02%7C1784514422%7C31536000%7CTue%2C+20-Jul-2027+02%3A27%3A02+GMT; uid_tt=4c4c60166fb6ef56acb5de4dd30ceb04; uid_tt_ss=4c4c60166fb6ef56acb5de4dd30ceb04; sid_tt=9a44b59f40d77577cdf1748f9ecd5e02; sessionid=9a44b59f40d77577cdf1748f9ecd5e02; sessionid_ss=9a44b59f40d77577cdf1748f9ecd5e02; session_tlb_tag=sttt%7C20%7CmkS1n0DXdXfN8XSPns1eAv_________ZrJlleAv-NfdbwQuKGXfTV6zVXq_6DmAPmF3LgJh8DXM%3D; is_staff_user=false; has_biz_token=false; sid_ucp_v1=1.0.0-KDI1MDJjMDczYmRiNjQ4YTE3OTdmMTMxZDc2MmViM2YzNGI2NzY4YzQKFwj99vDA_fXJBxD2jvbSBhiwFDgHQPQHGgJsZiIgOWE0NGI1OWY0MGQ3NzU3N2NkZjE3NDhmOWVjZDVlMDI; ssid_ucp_v1=1.0.0-KDI1MDJjMDczYmRiNjQ4YTE3OTdmMTMxZDc2MmViM2YzNGI2NzY4YzQKFwj99vDA_fXJBxD2jvbSBhiwFDgHQPQHGgJsZiIgOWE0NGI1OWY0MGQ3NzU3N2NkZjE3NDhmOWVjZDVlMDI"
       }
     }
   }
