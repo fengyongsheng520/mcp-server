@@ -1,6 +1,6 @@
 {
   "name": "@wojiaoxiaofenfen/yuque-mcp",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "语雀 MCP Server — 通过 MCP 协议接入语雀知识库，支持笔记的增删改查操作",
   "type": "module",
   "bin": {
