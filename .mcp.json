@@ -1,11 +1,12 @@
 {
   "mcpServers": {
     "xiaohongshu": {
-      "command": "node",
+      "command": "npx",
       "args": [
-        "./xiaohongshu-mcp/build/stdio.js",
-        "--base-url",
-        "http://localhost:8000"
+        "-y",
+        "-p",
+        "@wojiaoxiaofenfen/xiaohongshu-mcp",
+        "xiaohongshu-server-mcp"
       ],
       "env": {
         "XHS_API_BASE_URL": "http://localhost:8000",

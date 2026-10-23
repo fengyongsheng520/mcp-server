@@ -78,3 +78,6 @@ npm run build
 ## License
 
 [MIT](./LICENSE)
+
+
+先启动 uvx --from xiaohongshu-automation xhs-server
